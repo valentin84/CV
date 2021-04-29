@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "job_title": "Front-end developer",
+        "company_name": "Temenos",
+        "city_name": "Bucharest",
+        "employment_period": "December 2015 - Present",
+        "task": ["help customers implement home banking solutions tailored to their needs ", "use a range of in house build technologies and open source ones like (HTML, CSS, javascript, different frameworks and EdgeConnect, Kony)"]    
+    },
+    {
+        "id": 2,
+        "job_title": "Support Technician (L1)",
+        "company_name": "Cegeka",
+        "city_name": "Bucharest",
+        "employment_period": "May, 2015 - Nov, 2015",
+        "task": ["report issues based on server alerts", "fix smaller issues reported in alerts", "perform schedule maintenances and COB for different clients"]    
+    },
+    {
+        "id": 3,
+        "job_title": "Front-end developer",
+        "company_name": "Aesthetic Works",
+        "city_name": "Bucharest",
+        "employment_period": "May, 2015 - Oct, 2015",
+        "task": ["develop front-end part of a project from design using open source technologies", "front-end development for Wordpress based projects"] 
+    },
+    {
+        "id": 3,
+        "job_title": "Front-end developer",
+        "company_name": "E-rom media",
+        "city_name": "Bucharest",
+        "employment_period": "Oct, 2011 - May, 2012",
+        "task": ["develop web interfaces from PSD design using html/css/js/jQuery"] 
+    }
+]
