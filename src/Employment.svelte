@@ -41,13 +41,6 @@
     h2, .expanded {
         background: url('../images/briefcase.svg') no-repeat;
     }
-    h3 {
-        margin-bottom: 0.2rem;
-    }
-    .profile span {
-        font-style: italic;
-        color: #777676;   
-    }
 </style>
 
 <h2 class:expanded on:click={toggle}>{name}</h2>
@@ -56,8 +49,8 @@
     {#each data as {job_title, company_name, city_name, employment_period, task}}
         <div class="profile">
             <h3>{job_title} - {company_name} - {city_name}</h3> 
-            <span>{employment_period}</span>
-            <p>Responsabilities: </p>
+            <span in:typewriter>{employment_period}</span>
+            <p in:typewriter>Responsabilities: </p>
             <ul>  
                 {#each task as item}
                 <li in:typewriter>{item}</li>

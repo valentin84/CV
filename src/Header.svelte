@@ -1,5 +1,5 @@
 <script>
-    let url = '../images/ValentinC.jpg';
+    let url = '../images/profilePic.jpg';
 </script>
 
 <style>
@@ -35,6 +35,11 @@
         padding: 0 0 0 1.2rem;
         background-size: 1em 1em;  
     }
+    .email {
+        background: url('../images/email.svg') no-repeat;
+        padding: 0 0 0 1.2rem;
+        background-size: 1em 1.2em;  
+    }
 
     @media screen and (min-width: 300px) {
     
@@ -50,6 +55,7 @@
         <span class="profession">Front-end Developer</span>
         <span class="location">Bucharest, Romania</span>
         <span class="phone">+(40)771.280.800</span>
+        <span class="email">valentin.ciobanu(at)ciolentin.ro</span>
     </div>
        
 </header>
