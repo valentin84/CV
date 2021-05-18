@@ -13,6 +13,11 @@
 		width: 95%;
 		padding: 4rem;	
 	}
+	@media screen and (max-width: 900px) {
+		.main {
+			padding: 1rem;
+		}
+	}
 </style>
 
 <div class="main">
