@@ -549,7 +549,7 @@ var app = (function () {
     	};
     }
 
-    let url = "../images/profilePic.jpg";
+    let url = "./images/profilePic.jpg";
 
     class Header extends SvelteComponent {
     	constructor(options) {
@@ -767,7 +767,7 @@ var app = (function () {
     	let info = [];
 
     	onMount(async function () {
-    		let response = await fetch("../profile.json");
+    		let response = await fetch("./profile.json");
     		$$invalidate(2, info = await response.json());
     	});
 
@@ -1138,7 +1138,7 @@ var app = (function () {
     	}
 
     	onMount(async function () {
-    		let response = await fetch("../employment.json");
+    		let response = await fetch("./employment.json");
     		$$invalidate(2, data = await response.json());
 
     		data.forEach(e => {
