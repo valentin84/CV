@@ -1347,7 +1347,7 @@ var app = (function () {
     			create_component(employment.$$.fragment);
     			t2 = space();
     			create_component(education.$$.fragment);
-    			attr(div, "class", "main svelte-jblvwu");
+    			attr(div, "class", "main svelte-ovrxr");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
