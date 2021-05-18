@@ -1,8 +1,8 @@
 <script>
-	import Header from './Header.svelte';
-	import Profile from './Profile.svelte';
-	import Employment from './Employment.svelte';
-	import Education from './Education.svelte';
+	import Header from './components/Header.svelte';
+	import Profile from './components/Profile.svelte';
+	import Employment from './components/Employment.svelte';
+	import Education from './components/Education.svelte';
 </script>
 
 <style>

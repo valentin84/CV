@@ -1,5 +1,5 @@
 
-    function typewriter(node, { speed = 30 }) {
+    export default function typewriter(node, { speed = 30 }) {
 		const valid = (
 			node.childNodes.length === 1 &&
 			node.childNodes[0].nodeType === Node.TEXT_NODE
@@ -20,5 +20,3 @@
 			}
 		};
 	}
-
-	export const writter = typewriter()
