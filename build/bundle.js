@@ -549,7 +549,7 @@ var app = (function () {
     	};
     }
 
-    let url = "./images/profilePic.jpg";
+    let url = "./images/profilePic.JPG";
 
     class Header extends SvelteComponent {
     	constructor(options) {
