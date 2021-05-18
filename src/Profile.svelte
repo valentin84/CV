@@ -8,7 +8,7 @@
     }
     let info = [];
     onMount(async function() {
-        let response = await fetch('../profile.json');
+        let response = await fetch('./profile.json');
         info = await response.json();
     })
     function typewriter(node, { speed = 30 }) {

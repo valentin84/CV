@@ -1,5 +1,5 @@
 <script>
-    let url = '../images/profilePic.jpg';
+    let url = './images/profilePic.JPG';
 </script>
 
 <style>

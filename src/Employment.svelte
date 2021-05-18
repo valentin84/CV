@@ -9,7 +9,7 @@
     }
     
     onMount(async function() {
-        let response = await fetch('../employment.json');
+        let response = await fetch('./employment.json');
         data = await response.json();
         data.forEach((e) => {
            tasks.push(e.task);
