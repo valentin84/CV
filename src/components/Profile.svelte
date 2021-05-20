@@ -9,22 +9,21 @@
     }
     let info = [];
     onMount(async function() {
-        let response = await fetch('./profile.json');
+        let response = await fetch('./cv.json');
         info = await response.json();
     })
 </script>
-<style>
-    h2, .expanded {
-        background: url('../images/profile.svg') no-repeat;
-    }
-</style>
 
 <h2 class:expanded on:click={toggle}>{name}</h2>
 
 {#if expanded}
 <div class="profile">
-    {#each info as data}
-        <p in:typewriter>{data.description}</p>
-    {/each}
+    <p in:typewriter>{info.profile}</p>
 </div>
 {/if}
+
+<style>
+    h2, .expanded {
+        background: url('../images/profile.svg') no-repeat;
+    }
+</style>

@@ -1,5 +1,14 @@
 <script>
+    import  { onMount  } from "svelte";
     let url = './images/profilePic.JPG';
+    let data = [];
+    let details =[]
+
+    onMount(async function() {
+        let response = await fetch('./cv.json');
+        data = await response.json();
+		details = data.details;
+    })
 </script>
 
 <style>
@@ -51,11 +60,11 @@
     
     <div class="container">
         <img src="{url}" alt="ValentinC">
-        <h1>Valentin Ciobanu</h1>
-        <span class="profession">Front-end Developer</span>
-        <span class="location">Bucharest, Romania</span>
-        <span class="phone">+(40)771.280.800</span>
-        <span class="email">valentin.ciobanu(at)ciolentin.ro</span>
+        <h1>{details.fullName}</h1>
+        <span class="profession">{details.profession}</span>
+        <span class="location">{details.location}</span>
+        <span class="phone">{details.phone}</span>
+        <span class="email">{details.email}</span>
     </div>
        
 </header>

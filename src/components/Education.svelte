@@ -1,43 +1,34 @@
 <script>
+	import  { onMount  } from "svelte";
+	import typewriter from '../store.js';
     export let name;
     export let expanded = false;
+	let data = [];
+	let education = [];
     function toggle() {
         expanded = !expanded;
     }
 
-    function typewriter(node, { speed = 30 }) {
-		const valid = (
-			node.childNodes.length === 1 &&
-			node.childNodes[0].nodeType === Node.TEXT_NODE
-		);
-
-		if (!valid) {
-			throw new Error(`This transition only works on elements with a single text node child`);
-		}
-
-		const text = node.textContent;
-		const duration = text.length * speed;
-
-		return {
-			duration,
-			tick: t => {
-				const i = ~~(text.length * t);
-				node.textContent = text.slice(0, i);
-			}
-		};
-	}
+	onMount(async function() {
+        let response = await fetch('./cv.json');
+        data = await response.json();
+		education = data.education;
+    })
 </script>
+
+<h2 class:expanded on:click={toggle}>{name}</h2>
+
+{#if expanded}
+	{#each education as info}
+		<div class="profile">
+			<h3 in:typewriter>{info.school_name}</h3> 
+			<span in:typewriter>{info.period}</span>
+		</div>  
+	{/each}	  
+{/if}
+
 <style>
     h2, .expanded {
         background: url('../images/education.svg') no-repeat;
     }
 </style>
-
-<h2 class:expanded on:click={toggle}>{name}</h2>
-
-{#if expanded}
-<div class="profile">
-    <h3 in:typewriter>Facultatea de Sociologie, Universitatea Bucuresti</h3> 
-    <span in:typewriter>2009-2011</span>
-</div>    
-{/if}

@@ -1,5 +1,14 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# Welcome
 
+This is an interactive online CV you can deploy for yourself right here on github pages.
+You can freely copy and or modify it to your desire. 
+After deploy use the cv.json file in public directory to add new stuff to your CV.
+
+Also this is setup for direct diploy on github pages after u set up your repository so just use:
+
+```bash
+npm run build
+```
 ---
 
 # svelte app
