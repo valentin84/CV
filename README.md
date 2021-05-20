@@ -11,6 +11,8 @@ npm run build
 ```
 ---
 
+After replacing the cv.json with real data and your pic (please keep same naming format if you don't want to change the code profilePic.JPG) should look like this https://valentin84.github.io/CV/
+
 # svelte app
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.

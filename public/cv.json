@@ -1,52 +1,42 @@
 {
     "details": {
-        "fullName": "Valentin Ciobanu",
-        "profession": "Front-end Developer",
-        "location": "Bucharest, Romania",
-        "phone": "+(40)771.280.800",
-        "email": "valentin.ciobanu(at)ciolentin.ro"
+        "fullName": "Your Full Name",
+        "profession": "Your Profession",
+        "location": "City, Country",
+        "phone": "phone number",
+        "email": "email address"
     },
-    "profile": "I am an adaptable and responsible individual, passionate about technology. I love what I do (front-end development), I like to learn continuously and the web, being in continuous development, offers me that.",
+    "profile": "Some description about yourself, don't be shy, brag yourself :)",
     
     "employment": [
         {
+            "job_title": "Job Title 1",
+            "company_name": "Company Name",
+            "city_name": "City",
+            "employment_period": "December 2017 - Present",
+            "task": ["task 1", "task 2", "task 3"]    
+        },
+        {
             "id": 1,
-            "job_title": "Front-end developer",
-            "company_name": "Temenos",
-            "city_name": "Bucharest",
-            "employment_period": "December 2015 - Present",
-            "task": ["help customers implement home banking solutions tailored to their needs ", "use a range of in house build technologies and open source ones like (HTML, CSS, javascript, different frameworks and EdgeConnect, Kony)"]    
+            "job_title": "Job Title 1",
+            "company_name": "Company Name",
+            "city_name": "City",
+            "employment_period": "December 2015 - 2016",
+            "task": ["task 1", "task 2", "task 3", "task 4"]  
         },
         {
-            "id": 2,
-            "job_title": "Support Technician (L1)",
-            "company_name": "Cegeka",
-            "city_name": "Bucharest",
-            "employment_period": "May, 2015 - Nov, 2015",
-            "task": ["report issues based on server alerts", "fix smaller issues reported in alerts", "perform schedule maintenances and COB for different clients"]    
-        },
-        {
-            "id": 3,
-            "job_title": "Front-end developer",
-            "company_name": "Aesthetic Works",
-            "city_name": "Bucharest",
-            "employment_period": "May, 2015 - Oct, 2015",
-            "task": ["develop front-end part of a project from design using open source technologies", "front-end development for Wordpress based projects"] 
-        },
-        {
-            "id": 3,
-            "job_title": "Front-end developer",
-            "company_name": "E-rom media",
-            "city_name": "Bucharest",
-            "employment_period": "Oct, 2011 - May, 2012",
-            "task": ["develop web interfaces from PSD design using html/css/js/jQuery"] 
+            "id": 1,
+            "job_title": "Job Title 1",
+            "company_name": "Company Name",
+            "city_name": "City",
+            "employment_period": "December 2010 - 2011",
+            "task": ["task 1", "task 2"] 
         }
     ],
 
     "education": [
         {
-            "id": 1,
-            "school_name": "Facultatea de Sociologie, Universitatea Bucuresti",
+            "school_name": "Department Name, University Name City",
             "period": "2009-2011"
         } 
     ]
