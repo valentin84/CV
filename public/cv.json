@@ -17,7 +17,6 @@
             "task": ["task 1", "task 2", "task 3"]    
         },
         {
-            "id": 1,
             "job_title": "Job Title 1",
             "company_name": "Company Name",
             "city_name": "City",
@@ -25,7 +24,6 @@
             "task": ["task 1", "task 2", "task 3", "task 4"]  
         },
         {
-            "id": 1,
             "job_title": "Job Title 1",
             "company_name": "Company Name",
             "city_name": "City",
