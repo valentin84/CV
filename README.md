@@ -35,7 +35,7 @@ Create a new repository on your github for this project and push the local conte
 ```bash
 git add .
 git commit -m "first commit"
-git remove add origin <your repository url>
+git remote add origin <your repository url>
 git push origin master
 ```
 ---
