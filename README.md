@@ -1,30 +1,15 @@
-# Welcome
+# About
 
-This is an interactive online CV you can deploy for yourself right here on github pages.
+This is a simple and clean CV template built in [Svelte](https://svelte.dev/) you can deploy for yourself right here on github pages.
 You can freely copy and or modify it to your desire. 
-After deploy use the cv.json file in public directory to add new stuff to your CV.
 
-Also this is setup for direct diploy on github pages after u set up your repository so just use:
 
 ```bash
-npm run build
+cd the_folder_you_want_to_clone_in
+git clone https://github.com/valentin84/CV.git
+cd CV
 ```
 ---
-
-After replacing the cv.json with real data and your pic (please keep same naming format if you don't want to change the code profilePic.JPG) should look like this https://valentin84.github.io/CV/
-
-# svelte app
-
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
 
 ## Get started
@@ -32,7 +17,6 @@ cd svelte-app
 Install the dependencies...
 
 ```bash
-cd svelte-app
 npm install
 ```
 
@@ -41,8 +25,42 @@ npm install
 ```bash
 npm run dev
 ```
+Navigate to [localhost:5000](http://localhost:5000). You should see your app running. 
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+
+Change the cv.json with your details and replace profilePic.PNG with your own profile picture.
+
+Create a new repository on your github for this project and push the local content to it. 
+
+```bash
+git add .
+git commit -m "first commit"
+git remove add origin <your repository url>
+git push origin master
+```
+---
+
+## Deploy
+
+After replacing the content and pushing to your repository it is time to deploy to github pages:
+
+```bash
+npm run build
+```
+---
+
+And the final product should look something like this [myCV](https://valentin84.github.io/CV/)
+
+
+Thank you.
+ 
+
+
+
+
+
+
+
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
 
